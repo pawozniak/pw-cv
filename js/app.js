@@ -1,5 +1,3 @@
-var PORT = process.env.PORT || 500;
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
