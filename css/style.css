@@ -109,7 +109,6 @@ header {
     }
 }
 
-
 /* Main */
 main {
     min-width: 400px;
@@ -142,9 +141,7 @@ main {
 }
 
 .profile-image {
-    /* background-color: black; */
     background-image: url(../images/avataaars.png);
-    /* background-position: center; */
     width: 170px;
     height: 170px;
     display: block;
@@ -213,7 +210,6 @@ main {
 .fg-cpt {
     font-size: 1rem;
     line-height: 3rem;
-
 }
 
 footer {
