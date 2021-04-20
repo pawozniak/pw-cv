@@ -14,13 +14,23 @@ header {
     min-width: 400px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
-.nav-menu {
+.menu {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.nav-logos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -37,7 +47,6 @@ header {
 
 .nav-link:hover {
     color: #C4F2DD;
-
 }
 
 .nav-link {
@@ -65,11 +74,10 @@ header {
     -moz-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-
 }
 
 @media only screen and (max-width: 768px){
-    .nav-menu {
+    .nav-div {
         position: fixed;
         left: -100%;
         top: 4rem;
@@ -79,7 +87,7 @@ header {
         background-color: #f29327;
     }
 
-    .nav-menu.active {
+    .nav-div.active {
         left: 0;
     }
 
@@ -121,6 +129,7 @@ main {
     background-image: url(../images/istockphoto-1142187389-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 400px;
     width: 80vw;
     height: 50vh;
     margin-bottom: 6vh;
@@ -131,6 +140,17 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5vh;
+    margin: 0 0 2rem 0;
+}
+
+.adjuster{
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: -5rem;
+    border:1px solid #0378A6;
+    visibility: hidden;
 }
 
 .profile{
@@ -183,7 +203,7 @@ main {
 }
 
 .projects {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     padding: 2rem;
     color: #0367A6;
     font-weight: 700;
@@ -200,7 +220,8 @@ main {
 .projects > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
+    cursor: pointer;
 }
 
 .projects > ul > li {
